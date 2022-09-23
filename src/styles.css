@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-size: 14px;
+  color: #222222;
+  font-weight: 400;
+  line-height: 1.35;
+  background-color: #a8a2a2;
+  font-family: 'Roboto Light',sans-serif;
+}
+a{
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
+}
+.section{
+  float: left;
+  width: 100%;
+}
+
+.container{
+  float:none;
+  width: 1200px;
+  margin: 0 auto;
+}
+.sidebar{
+  float: left;
+  width: cal(25%-10px);
+}
+.content{
+  float: right;
+  width: 75%;
+}
+.footer li i{
+  font-size: 50px;
+  color: yellow;
+}
+.footer li i:hover{
+  color: darkmagenta;
+}
+.navsite {
+  float: left;
+  padding: 5px;
+}
+.nav-item {
+  padding: 10px;
+}

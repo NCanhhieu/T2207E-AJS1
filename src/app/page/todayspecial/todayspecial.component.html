@@ -1,0 +1,30 @@
+<div class="content col">
+  <div class="special" *ngfor="let s of data">
+    {{s.id}}{{s.name}}
+    <img src="{{s.image}}">
+    {{s.desciption}}
+    {{s.price}}
+  </div>
+  <table>
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>FOOD</th>
+      <th>Image</th>
+      <th>Description</th>
+      <th>Price</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let st of data">
+      <td>{{st.id}}</td>
+      <td>{{st.name}}</td>
+      <td><img src="{{st.image}}"></td>
+      <td>{{st.description}}</td>
+      <td>{{st.price}}</td>
+    </tr>
+    </tbody>
+  </table>
+
+</div>
+

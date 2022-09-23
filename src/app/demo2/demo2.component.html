@@ -1,0 +1,13 @@
+<div class="class">
+  <h3> {{tenlop}}</h3>
+ <h5> Class {{classroomname}}</h5>
+  student = {{studentnumber}}
+  songuoi = {{songuoi}}
+  <button (click)="upnumber()" type="button"  >tang so luong</button>
+<p> <input type="text" [(ngModel)]="tenlop" /> </p>
+<p> <input type="text" [(ngModel)]="songuoi" /> </p>
+</div>
+<app-student [STname]="studentname1" ></app-student>
+<app-student [STname]="studentname2" ></app-student>
+<app-student [STname]="studentname3" ></app-student>
+

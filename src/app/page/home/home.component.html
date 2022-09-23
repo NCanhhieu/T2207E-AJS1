@@ -1,0 +1,35 @@
+<div class="card">
+  <div class="card-body">
+    <h3>{{student.name}}</h3>
+    <p class="text-danger">{{student.address}}</p>
+    <p *ngIf="student.age >= 18" class="text-danger">{{student.age}}</p>
+    <p *ngIf="student.age < 18" class="text-info">{{student.age}}</p>
+  <p *ngFor="let n of arrayNumber; let i = index">
+    {{arrayNumber[i]}} - xin chao cac ban
+  </p>
+    <p *ngFor="let xyz of arrayNumber;">
+      {{arrayNumber[xyz]}} - xin chao cac ban
+    </p>
+    <ul>
+      <li *ngFor="let s of stringArray">{{s}} </li>
+    </ul>
+    <table>
+      <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Address</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let st of ls">
+        <td>{{st.id}}</td>
+        <td>{{st.name}}</td>
+        <td>{{st.age}}</td>
+        <td>{{st.address}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
