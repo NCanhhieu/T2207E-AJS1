@@ -50,3 +50,10 @@ img{
 .nav-item {
   padding: 10px;
 }
+.content .item{
+  float: left;
+  border: 1px solid red;
+  border-radius: 9px;
+  padding: 10px;
+  height:350px;
+}

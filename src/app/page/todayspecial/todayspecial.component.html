@@ -1,30 +1,10 @@
 <div class="content col">
-  <div class="special" *ngfor="let s of data">
-    {{s.id}}{{s.name}}
-    <img src="{{s.image}}">
-    {{s.desciption}}
-    {{s.price}}
+  <div  *ngFor="let s of data">
+    <div class="item col-4 col-lg-4 col-sm-4 col-xl-4 col-md-4">
+       <img src="{{s.image}}">
+      {{s.id}} - {{s.name}}
+      <h4> Des: {{s.description}} </h4>
+    <h3>  Price: {{s.price}} $ </h3>
   </div>
-  <table>
-    <thead>
-    <tr>
-      <th>ID</th>
-      <th>FOOD</th>
-      <th>Image</th>
-      <th>Description</th>
-      <th>Price</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr *ngFor="let st of data">
-      <td>{{st.id}}</td>
-      <td>{{st.name}}</td>
-      <td><img src="{{st.image}}"></td>
-      <td>{{st.description}}</td>
-      <td>{{st.price}}</td>
-    </tr>
-    </tbody>
-  </table>
-
 </div>
-
+</div>
