@@ -5,8 +5,3 @@ export interface Ispecial {
   description: string;
   price: number;
 }
-
-export interface Ispecialmenu {
-  message: string;
-  data: Ispecial[];
-}

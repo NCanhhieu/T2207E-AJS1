@@ -6,6 +6,17 @@
     </ul>
   </aside>
   <div class="content col">
-
+<div class="row">
+  <div class="col-3" *ngFor=" let f of food">
+    <div class="card mt-2 mb-2">
+<img src="{{f.image}}">
+      <div class="card-body">
+        <h4>{{f.name}}</h4>
+        <p>{{f.description}}</p>
+        <p class="text-danger">{{f.price}}</p>
+      </div>
+    </div>
+  </div>
+</div>
   </div>
 </div>

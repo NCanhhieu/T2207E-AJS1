@@ -15,6 +15,7 @@
       <li class="nav-item"><a routerLink="/contactus">Contact Us </a></li>
       <li class="nav-item"><a routerLink="/tos"><p>TOS</p></a></li>
       <li class="nav-item"><a routerLink="/food">Food </a></li>
+      <li class="nav-item"><a routerLink="/weather"> Weather </a></li>
 
 
     </ul> </div>
@@ -22,12 +23,9 @@
 </nav>
 <section class="section main">
   <div class="container">
-    <aside class="sidebar">
-      <router-outlet></router-outlet>
-         sidebar
-    </aside>
+
     <article class="content">
-           <app-todayspecial></app-todayspecial>
+      <router-outlet></router-outlet>
     </article>
   </div>
 </section>

@@ -13,7 +13,7 @@ import {ContactusComponent} from "./page/ContactUs/contactus.component";
 import {TOSComponent} from "./page/TOS/TOS.component";
 import {FoodComponent} from "./page/Food/food.component";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
-import {TodayspecialComponent} from "./page/todayspecial/todayspecial.component";
+import {WeatherComponent} from "./page/weather/weather.component";
 
 //khaibao cac page tren website
 const appRoutes: Routes =[
@@ -23,14 +23,16 @@ const appRoutes: Routes =[
   {path: 'contactus', component: ContactusComponent},
   {path: 'tos', component: TOSComponent},
   {path: 'food', component: FoodComponent},
-  {path: 'today', component: TodayspecialComponent}
+  {path: 'weather', component: WeatherComponent},
+
+
 ]
 @NgModule({
   declarations: [
     AppComponent, StudentComponent, ClassroomComponent,
     HomeComponent, LoginComponent, SignupComponent,
     ContactusComponent, TOSComponent, FoodComponent,
-    TodayspecialComponent
+    WeatherComponent
   ],
   imports: [
     BrowserModule, FormsModule,

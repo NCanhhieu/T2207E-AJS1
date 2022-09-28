@@ -1,0 +1,11 @@
+
+<div class="col-3" *ngFor=" let f of data">
+  <div class="card mt-2 mb-2">
+    {{f.dt_txt}}
+    <div> <h1><span>{{f.main.temp}}</span><sup>o</sup>C</h1> {{f.weather.description}} </div>
+    <img  width="80" src="https://openweathermap.org/img/wn/{{f.icon}}@2x.png" />
+
+  </div>
+</div>
+
+
