@@ -1,11 +1,14 @@
-
+<div class="content col">
+  <div class="row">
 <div class="col-3" *ngFor=" let f of data">
   <div class="card mt-2 mb-2">
     {{f.dt_txt}}
-    <div *ngFor="let t of fore"> <h1><span>{{t.main.temp}}</span><sup>o</sup>C</h1> {{t.description}}
-    <img  width="80" src="https://openweathermap.org/img/wn/{{t.icon}}@2x.png" /> </div>
+    <h1><span>{{f.main.temp}}</span><sup>o</sup>C</h1>
+    <div *ngFor=" let g of f.weather">  {{g.description}}
+    <img  width="80" src="https://openweathermap.org/img/wn/{{g.icon}}@2x.png" /> </div>
 
   </div>
 </div>
-
+  </div>
+</div>
 

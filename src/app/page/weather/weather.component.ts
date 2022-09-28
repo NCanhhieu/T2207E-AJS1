@@ -1,8 +1,6 @@
 import {Component} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
-import {IFoodMenu, Imenu} from "../../interface/food.interface";
-import {Iweather, list} from "../../interface/weather.interface";
-import {Ispecial} from "../../interface/todayspecial.interface";
+import {Iweather, List} from "../../interface/weather.interface";
 
 @Component(
   {
@@ -10,8 +8,8 @@ import {Ispecial} from "../../interface/todayspecial.interface";
     templateUrl:'./weather.component.html'
   })
 export class WeatherComponent {
-  data: list[] = [];
-  fore : weather[] =[];
+  data: List[] = [];
+
   constructor(private http: HttpClient) {
   }
   ngOnInit(){
@@ -19,9 +17,6 @@ export class WeatherComponent {
     this.http.get<Iweather>(url).subscribe(data => {
       this.data = data.list;
     });
-    this.http.get<{data:list[]}>(url).subscribe(data => {
-      this.fore = data.data;
-    })
   }
 
 }

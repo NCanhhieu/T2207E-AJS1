@@ -28,7 +28,7 @@ export interface Wind {
 }
 
 export interface Rain {
-  3h: number;
+  _3h: number;
 }
 
 export interface Sys {
